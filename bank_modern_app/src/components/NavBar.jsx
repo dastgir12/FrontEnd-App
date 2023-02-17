@@ -4,7 +4,6 @@ import { close, logo, menu } from "../assets";
 import { navLinks } from "../constant";
 const NavBar = () => {
   const [toggle, setToggle] = useState(false);
-  console.log(toggle);
   return (
     <nav className="w-full py-6 justify-between items-center navbar">
       <img src={logo} alt="hoobank" className="w-[124px] h-[32px]" />
@@ -28,7 +27,6 @@ const NavBar = () => {
           className="w-[28px] h-[28px] object-contain "
           onClick={() => setToggle((prev) => !prev)}
         />
-        //serve as our menue
         <div
           className={`${
             toggle ? "flex" : "hidden"
